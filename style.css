@@ -2398,3 +2398,122 @@ p {
 .hero-subtitle .divider{
     display:none !important;
 }
+
+
+
+/* ===== Hero collision final fix ===== */
+
+/* Prevent fixed header/nav from visually colliding with hero typography */
+.main-header{
+    z-index: 1200 !important;
+}
+
+.header-container{
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+}
+
+/* Push hero content safely below the top navigation */
+.hero-content{
+    padding-top: clamp(132px, 16vh, 190px) !important;
+    padding-bottom: clamp(90px, 12vh, 140px) !important;
+    max-width: 980px !important;
+}
+
+/* Make the hero title slightly more compact and safer under nav */
+.hero-title{
+    font-size: clamp(3rem, 6.7vw, 5.45rem) !important;
+    line-height: 1.02 !important;
+    margin-bottom: 18px !important;
+}
+
+/* Remove any remaining visual divider/dot/pipe in subtitle */
+.hero-subtitle .divider{
+    display:none !important;
+}
+.hero-subtitle{
+    display:block !important;
+    max-width: 780px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    line-height:1.55 !important;
+}
+
+/* Increase readable separation before buttons */
+.hero-desc{
+    margin-bottom: 36px !important;
+}
+
+.hero-actions{
+    margin-top: 0 !important;
+    position: relative !important;
+    z-index: 8 !important;
+}
+
+/* The scroll indicator stays out of the text/CTA zone */
+.scroll-down-indicator{
+    right: clamp(24px, 4vw, 60px) !important;
+    bottom: clamp(28px, 5vh, 64px) !important;
+}
+
+/* Tablet/mobile: hide nav links and give hero more breathing space */
+@media screen and (max-width: 1024px){
+    .desktop-nav{
+        display:none !important;
+    }
+    .hamburger{
+        display:flex !important;
+    }
+    .hero-content{
+        padding-top: 132px !important;
+        padding-bottom: 116px !important;
+    }
+    .hero-title{
+        font-size: clamp(2.8rem, 12vw, 5rem) !important;
+    }
+}
+
+/* Small height screens: prevent any vertical collision */
+@media screen and (max-height: 760px){
+    .hero-content{
+        padding-top: 118px !important;
+        padding-bottom: 84px !important;
+    }
+    .hero-title{
+        font-size: clamp(2.6rem, 6vw, 4.7rem) !important;
+        margin-bottom: 14px !important;
+    }
+    .hero-badge{
+        margin-bottom: 14px !important;
+    }
+    .hero-desc{
+        margin-bottom: 24px !important;
+    }
+    .scroll-down-indicator{
+        display:none !important;
+    }
+}
+
+/* Phone: remove scroll indicator and avoid cramping */
+@media screen and (max-width: 768px){
+    .hero-section{
+        min-height: 100svh !important;
+        height: auto !important;
+    }
+    .hero-content{
+        padding-top: 126px !important;
+        padding-bottom: 92px !important;
+    }
+    .hero-actions{
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 14px !important;
+    }
+    .hero-actions .btn{
+        width: min(320px, 88vw) !important;
+    }
+    .hero-subtitle{
+        font-size: .92rem !important;
+        letter-spacing: .14em !important;
+    }
+}

@@ -1,8 +1,9 @@
-ELEMENT SALON — VERSIONE RIFINITA
+ELEMENT SALON — VERSIONE FINALE HERO FIX
 
-- Indicatore scroll spostato in basso a destra, non sovrappone più le scritte hero.
-- Su mobile l'indicatore scroll viene nascosto.
-- Sezione prenotazioni rifinita in stile concierge premium.
-- Logica JS del wizard conservata.
+- Correzione sovrapposizione navbar/titoli hero.
+- Hero content abbassato con spacing responsive.
+- Divider/pallino rimosso anche dall'HTML.
+- Scroll indicator tenuto fuori dalla zona testo e nascosto su schermi piccoli/bassi.
+- Sezione prenotazioni premium mantenuta.
 
 Deploy: carica index.html, style.css e script.js nella root GitHub Pages.
