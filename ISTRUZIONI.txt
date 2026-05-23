@@ -1,0 +1,8 @@
+ELEMENT SALON — VERSIONE RIFINITA
+
+- Indicatore scroll spostato in basso a destra, non sovrappone più le scritte hero.
+- Su mobile l'indicatore scroll viene nascosto.
+- Sezione prenotazioni rifinita in stile concierge premium.
+- Logica JS del wizard conservata.
+
+Deploy: carica index.html, style.css e script.js nella root GitHub Pages.
