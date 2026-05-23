@@ -1,9 +1,8 @@
-ELEMENT SALON — VERSIONE FINALE HERO FIX
+ELEMENT SALON — HERO CLEAN FINAL
 
-- Correzione sovrapposizione navbar/titoli hero.
-- Hero content abbassato con spacing responsive.
-- Divider/pallino rimosso anche dall'HTML.
-- Scroll indicator tenuto fuori dalla zona testo e nascosto su schermi piccoli/bassi.
-- Sezione prenotazioni premium mantenuta.
+- Rimossa la scritta ROME & NEW ORLEANS dalla parte alta della hero.
+- Inserita come pill elegante sotto la descrizione, lontana dalla navbar.
+- Spacing hero rifinito per evitare qualsiasi sovrapposizione.
+- Booking premium mantenuto.
 
 Deploy: carica index.html, style.css e script.js nella root GitHub Pages.
