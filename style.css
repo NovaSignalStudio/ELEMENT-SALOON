@@ -2392,3 +2392,9 @@ p {
   body{cursor:auto!important}
   .cursor-dot,.cursor-outline{display:none!important}
 }
+
+
+/* Remove tiny divider dot between hero elements */
+.hero-subtitle .divider{
+    display:none !important;
+}
